@@ -3,4 +3,30 @@ void main(){
 // as "John", "age" as 25, "isStudent" as true. Write a Dart code to check if the
 // person is both a student and over 18 years old. Print "Eligible" if both
 // conditions are true, otherwise print "Not eligible".
+  Map<String, dynamic> name = {
+    "name": "John",
+    "age": 25,
+    "isStudent": true,
+  };
+
+  // Printing the "person" map
+  print("Person Map: $name");
+
+
+ String personMap = checkEligible(name);
+
+  print("Person is: $personMap");
+
+
+}
+
+checkEligible(numbers) {
+
+    if(18 > numbers['age']){
+       return "NOt Eligible";
+    }else{
+       return "Eligible";
+
+    }
+  
 }
